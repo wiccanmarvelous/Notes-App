@@ -12,7 +12,7 @@ const useEditNote = () => {
         setLoading(true);
 
         try {
-            const res = await fetch(`http://localhost:1000/api/notes/cards/edit/${noteId}`, {
+            const res = await fetch(`/api/notes/cards/edit/${noteId}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ title, note, color })

@@ -12,7 +12,7 @@ const useDelNote = () => {
         setLoading(true);
 
         try {
-            const res = await fetch(`http://localhost:1000/api/notes/cards/del/${noteId}`, {
+            const res = await fetch(`/api/notes/cards/del/${noteId}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' }
             })

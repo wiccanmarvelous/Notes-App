@@ -12,7 +12,7 @@ const useSetNotes = () => {
         setLoading(true);
 
         try {
-            const res = await fetch('http://localhost:1000/api/notes/cards/set', {
+            const res = await fetch('/api/notes/cards/set', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId: user.id, title: inputTitle, note: inputTextarea, color })

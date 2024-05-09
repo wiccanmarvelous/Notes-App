@@ -12,7 +12,7 @@ const useGetNotes = () => {
         setLoading(true);
 
         try {
-            const res = await fetch('http://localhost:1000/api/notes/cards/get', {
+            const res = await fetch('/api/notes/cards/get', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId: user.id })
