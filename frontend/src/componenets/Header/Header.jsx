@@ -31,7 +31,7 @@ const Header = (props) => {
             <header className='header'>
                 <div className="logo">
                     <img src={Logo} style={{ height: '3rem' }} alt="logo" />
-                    <h1>{`${user.name}'s Notes`}</h1>
+                    <h1>Notes</h1>
                 </div>
                 <div className="modification">
                     <button onClick={() => setAddNote(true)} className='addItemBtn'> <NoteAddOutlinedIcon style={{ fontSize: 35 }} /></button>
